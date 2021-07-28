@@ -33,16 +33,17 @@
 
 .button{
     font-size: 2.3em;
-    font-weight: 900;
     border-radius: 0.25em;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
     color :steelblue;
     background-color: rgb(48, 47, 35);
     text-align: center;
-    width: auto;
+    width: 100%;
     overflow: hidden;
 }
 
-@media only screen and (max-width: 600px), screen and (max-height: 600px) {
+@media only screen and (max-width: 800px), screen and (max-height: 600px) {
     .grid{
         width:17em;
     }
@@ -57,6 +58,26 @@
 
     .button{
         font-size: 1.6em;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 400px), screen and (max-height: 600px) {
+    .grid{
+        width:14em;
+    }
+
+    .screen{
+        height: 3em;
+    }
+
+    .screen::before{
+        height: 2em;
+    }
+
+    .button{
+        font-size: 1.2em;
     }
     
     
