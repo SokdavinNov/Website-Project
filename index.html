@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        a{
+            color:steelblue;
+            text-decoration: none;
+        }
+
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            font-size: 2em;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+        }
+
+        .title >h1{
+            font-size: 1em;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+        .link-container{
+            padding: 1em ;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +35,11 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Welcome to my site</p>
-    <a href="Project 1 (Loading)/index.html">Project 1 :Loading</a>
-    <a href="Project 2 (Unfunctional Calculator)/index.html">Project 2 :Unfunctional Calculator</a>
-    <a href="Project 3/index.html">Project 3 (tba)</a>
+    <div class="flex-container">
+        <div class="title"><h1>Project List:</h1></div>
+        <div class="link-container"><a href="Project 1 (Loading)/index.html">Project 1 :Loading</a></div>
+        <div class="link-container"><a href="Project 2 (Unfunctional Calculator)/index.html">Project 2 :Unfunctional Calculator</a></div>
+        <div class="link-container"><a href="Project 3 (Nav Bar)/index.html">Project 3 :Nav Bar</a></div>
+    </div>
 </body>
 </html>
