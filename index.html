@@ -20,11 +20,7 @@
 
         a{
             text-decoration: none;
-        }
-
-        a:hover{
-            background-color: steelblue;
-            color:white;
+            padding: 1em;
         }
 
         /*
@@ -61,29 +57,49 @@
         }
 
         .link-container{
-            padding: 1.5em ;
+            padding: 1em;
+            margin:1em;
         }
 
+        .link-container > span{
+            font-size: 0.3em;
+        }
 
         /*
             Extra Style
         */
         .border{
-            padding:0.5em;
             border: 0.1em solid black;
             border-radius: 1em;
             background-color: white;
         }
+        
+        .border:hover,
+        .border:hover a{
+            background-color: steelblue;
+            color: white;
+        }
 
         @media screen and (max-width:1000px) {
             body{
-                font-size: 0.8em;
+                font-size: 1.2em;
             }
-        }
 
-        @media screen and (max-width:500px) {
-            body{
-                font-size: 0.5em;
+            .title>p{
+                font-size: 1.6em;
+            }
+
+            .link-container{
+                padding:0em;
+                margin:0.5em;
+            }
+
+            a{
+                padding: 0em;
+            }
+
+            .link-container{
+                padding: 1em ;
             }
         }
     </style>
@@ -99,10 +115,10 @@
 <body>
     <div class="flex-container">
         <div class="title "><p>Project List:</p></div>
-        <div class="link-container"><a class="border" href="Project 1 (Loading)/index.html">Project 1 : Loading 1 (27/July/2021)</a></div>
-        <div class="link-container"><a class="border" href="Project 2 (Unfunctional Calculator)/index.html">Project 2 : Unfunctional Calculator (28/July/2021)</a></div>
-        <div class="link-container"><a class="border" href="Project 3 (Nav Bar)/index.html">Project 3 : Nav Bar (29/July/2021)</a></div>
-        <div class="link-container"><a class="border" href="Project 4 (Loading 2)/index.html">Project 4 : Loading 2 (30/July/2021)</a></div>
+        <div class="link-container border"><a href="Project 1 (Loading)/index.html">Project 1 : Loading 1 </a></div>
+        <div class="link-container border"><a href="Project 2 (Unfunctional Calculator)/index.html">Project 2 : Unfunctional Calculator</a></div>
+        <div class="link-container border"><a href="Project 3 (Nav Bar)/index.html">Project 3 : Nav Bar </a></div>
+        <div class="link-container border"><a href="Project 4 (Loading 2)/index.html">Project 4 : Loading 2 </a></div>
     </div>
 </body>
 </html>
