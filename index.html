@@ -23,6 +23,10 @@
             padding: 1em;
         }
 
+        ul{
+            list-style-type: none;
+        }
+
         /*
             Layout
         */
@@ -115,10 +119,18 @@
 <body>
     <div class="flex-container">
         <div class="title "><p>Project List:</p></div>
-        <div class="link-container border"><a href="Project 1 (Loading)/index.html">Project 1 : Loading 1 </a></div>
-        <div class="link-container border"><a href="Project 2 (Unfunctional Calculator)/index.html">Project 2 : Unfunctional Calculator</a></div>
-        <div class="link-container border"><a href="Project 3 (Nav Bar)/index.html">Project 3 : Nav Bar </a></div>
-        <div class="link-container border"><a href="Project 4 (Loading 2)/index.html">Project 4 : Loading 2 </a></div>
+        <div class="link-container border"><a class="link" href="Project 1 (Loading)/index.html">Loading 1 </a></div>
+        <div class="link-container border"><a class="link" href="Project 2 (Unfunctional Calculator)/index.html">Unfunctional Calculator</a></div>
+        <div class="link-container border"><a class="link" href="Project 3 (Nav Bar)/index.html">Nav Bar </a></div>
+        <div class="link-container border"><a class="link" href="Project 4 (Loading 2)/index.html">Loading 2 </a></div>
     </div>
+
+    <script>
+        var project = document.getElementsByClassName('link');
+        var projectNum =1;
+        for (var i = 0;i<project.length;i++,projectNum++){
+            project[i].prepend('Project ' + projectNum + ' : ');
+        }
+    </script>
 </body>
 </html>
