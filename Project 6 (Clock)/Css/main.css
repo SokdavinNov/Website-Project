@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-size: 0.625rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(133, 106, 122);
+}
+
+.clock{
+    min-width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    width:  8em;
+    height: 3em;
+
+    box-shadow: inset 0 0 0.3em 0.1em rgb(255, 0, 217),0 0 0.3em 0.1em rgb(255, 0, 217);
+    color: rgb(255, 0, 217);
+    font-size: 3rem;
+
+    text-shadow:  0 0 1em white,0 0 1em rgb(255, 0, 217);
+    
+    border: 0.25em rgb(255, 0, 217) solid ;
+    position: relative;
+}
+
+.clock::before{
+    content: '';
+    height: 100%;
+    width: 110%;
+    top:130%;
+    transform: perspective(3em) rotateX(20deg) scale(1,0.35);
+    filter: blur(1.3em);
+    position: absolute;
+    background-color: rgb(255, 0, 217);
+}
