@@ -64,7 +64,7 @@ button{
 
 .button{
     background-color: rgb(191, 191, 191);
-    min-width: 1.5em;
+    min-width: 3em;
     border: none;
     display: inline-block ;
     width: 10%;
@@ -87,6 +87,8 @@ button{
 .list-item:nth-child(odd){
     background-color: rgb(209, 209, 209);
 }
+
+/* Hover Style */
 
 .list-item:hover,
 .list-item:nth-child(odd):hover{
@@ -113,8 +115,9 @@ button{
     background-color: rgba(140, 140, 140,0.5);
 }
 
+/* Extra Style */
 
-
+    /* Check Mark */
 .checked::before{
     content: '';
     position: absolute;
@@ -127,12 +130,14 @@ button{
     height: 25px;
 }
 
+
 .delete{
     position: absolute;
     background-color: transparent;
     font-size: 1.5em;
     border: none;
     width: 5%;
+    min-width: 2em;
     height: 100%;
     top:0;
     right: 0;
