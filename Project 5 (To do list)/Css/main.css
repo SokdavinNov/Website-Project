@@ -1,0 +1,145 @@
+/* Global */
+
+body,
+button{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.625rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Typography */
+
+.title{
+    font-size: 3em;
+    font-weight: 700;
+    color:white;
+    letter-spacing: 0.2em;
+    margin: 1em 0em 0em 0em;
+}
+
+.text-box,
+.button,
+.list{
+    font-size: 2em;
+}
+
+/* Layout */
+
+.flex-container{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    background-color: red;
+}
+
+.button-group,
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0em 4em 0em;
+    padding: 0px;
+}
+
+.button-group{
+    width: 100%;
+}
+
+.text-box,
+.button,
+.list{
+    padding: 0em;
+    margin: 0em;
+}
+
+.text-box{
+    width:  75%;
+    padding: 0.5em;
+    border:none;
+}
+
+.button{
+    background-color: rgb(191, 191, 191);
+    min-width: 1.5em;
+    border: none;
+    display: inline-block ;
+    width: 10%;
+}
+
+.list{
+    width: 100%;
+    word-wrap:break-word;
+    background-color: black;
+    list-style-type: none;
+}
+
+.list-item{
+    position: relative;
+    padding:1em 5em 1em 3em;
+    max-width: 100%;
+    background-color: white;
+}
+
+.list-item:nth-child(odd){
+    background-color: rgb(209, 209, 209);
+}
+
+.list-item:hover,
+.list-item:nth-child(odd):hover{
+    color: white;
+}
+
+.list-item:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.list-item:nth-child(odd):hover{
+    background-color: rgba(209, 209, 209,0.5);
+}
+
+.checked,
+.checked:nth-child(odd){
+    text-decoration: line-through;
+    background-color: rgb(140, 140, 140);
+    color:white;
+}
+
+.checked:hover,
+.checked:nth-child(odd):hover{
+    background-color: rgba(140, 140, 140,0.5);
+}
+
+
+
+.checked::before{
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 23px;
+    border: 3px white solid;
+    border-color: transparent white white transparent;    
+    transform: rotate(45deg);
+    width: 5px;
+    height: 25px;
+}
+
+.delete{
+    position: absolute;
+    background-color: transparent;
+    font-size: 1.5em;
+    border: none;
+    width: 5%;
+    height: 100%;
+    top:0;
+    right: 0;
+}
+
+.delete:hover{
+    background-color: red;
+    color: white;
+
+}
