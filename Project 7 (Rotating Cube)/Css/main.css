@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 0.625rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .flex-container{
@@ -9,9 +11,25 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: rgb(92, 92, 92);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.flex-container > *{
+    display: flex;
+}
+
+.flex-container > p{
+    font-size: 2rem;
+    width: 50%;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
 }
 
 #cube1,
@@ -66,6 +84,10 @@ body{
 }
 
 @media screen and (max-width:600px) {
+    .flex-container>p{
+        font-size: 1rem;
+    }
+
     #cube1,
     #cube2,
     #cube3{
