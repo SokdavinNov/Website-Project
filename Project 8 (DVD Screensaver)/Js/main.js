@@ -3,6 +3,11 @@ img.src="Image/dvd_Logo.png";
 img.style.width='100px';
 img.style.height='100px';
 
+window.addEventListener('resize', function(event) {
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
+}, true);
+
 const canvas=document.querySelector("canvas");
 canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
