@@ -7,13 +7,17 @@ const canvas=document.querySelector("canvas");
 canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
 
+window.addEventListener('resize', function(event) {
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
+}, true);
 
 var c=canvas.getContext('2d');
-var x=10;
-var y=10;
-var xvelo=5;
-var yvelo=5;
-var image_dimension=window.innerWidth/10;
+var image_dimension=window.innerWidth/8;
+var x=Math.floor(Math.random() *(canvas.width-image_dimension));
+var y=Math.floor(Math.random() *(canvas.height-image_dimension));
+var xvelo=Math.floor((Math.random()-0.5)*5);
+var yvelo=Math.floor((Math.random()-0.5)*5);
 var invert=true;
 var invert_Value=100;
 
