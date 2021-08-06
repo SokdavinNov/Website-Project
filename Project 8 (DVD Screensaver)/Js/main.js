@@ -9,10 +9,10 @@ canvas.height=window.innerHeight;
 
 var c=canvas.getContext('2d');
 var image_dimension=window.innerWidth/8;
-var x=Math.floor(Math.random() *(canvas.width-image_dimension));
-var y=Math.floor(Math.random() *(canvas.height-image_dimension));
-var xvelo=Math.floor((Math.random()-0.5)*5);
-var yvelo=Math.floor((Math.random()-0.5)*5);
+var x=100;
+var y=100;
+var xvelo=3;
+var yvelo=3;
 var invert=true;
 var invert_Value=100;
 
