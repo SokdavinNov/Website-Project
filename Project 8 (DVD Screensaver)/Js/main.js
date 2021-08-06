@@ -3,10 +3,7 @@ img.src="Image/dvd_Logo.png";
 img.style.width='100px';
 img.style.height='100px';
 
-window.addEventListener('resize', function(event) {
-    canvas.width=window.innerWidth;
-    canvas.height=window.innerHeight;
-}, true);
+
 
 const canvas=document.querySelector("canvas");
 canvas.width=window.innerWidth;
@@ -20,6 +17,17 @@ var xvelo=Math.floor((Math.random()-0.5)*5);
 var yvelo=Math.floor((Math.random()-0.5)*5);
 var invert=true;
 var invert_Value=100;
+
+window.addEventListener('resize', function(event) {
+    canvas.width=window.innerWidth;
+    canvas.height=window.innerHeight;
+    if(x>canvas.width-image_dimension){
+        x=0;
+    }
+    if(y>canvas.height-image_dimension){
+        y=0;
+    }
+}, true);
 
 function update(){
     c.drawImage(img,x,y,image_dimension,image_dimension);
