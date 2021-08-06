@@ -7,11 +7,6 @@ const canvas=document.querySelector("canvas");
 canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
 
-window.addEventListener('resize', function(event) {
-    canvas.width=window.innerWidth;
-    canvas.height=window.innerHeight;
-}, true);
-
 var c=canvas.getContext('2d');
 var image_dimension=window.innerWidth/8;
 var x=Math.floor(Math.random() *(canvas.width-image_dimension));
