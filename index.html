@@ -1,140 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        /*
+  <style>
+    /*
             Global
         */
-        a,
-        body{
-            color:steelblue;
-        }
+    a,
+    body {
+      color: steelblue;
+    }
 
-        body{
-            margin: 0px;
-            padding: 0px;
-            background-color:rgb(153, 163, 255);
-            font-family: 'Noto Sans', sans-serif;
-            letter-spacing: 0.1em;
-            font-size: 2em;
-        }
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(153, 163, 255);
+      font-family: "Noto Sans", sans-serif;
+      letter-spacing: 0.1em;
+      font-size: 2em;
+    }
 
-        a{
-            text-decoration: none;
-            padding: 1em;
-        }
+    a {
+      text-decoration: none;
+      padding: 1em;
+    }
 
-        ul{
-            list-style-type: none;
-        }
+    ul {
+      list-style-type: none;
+    }
 
-        /*
+    /*
             Layout
         */
 
-        .flex-container{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-        
-        .title{
-            display: flex;
-            padding: 2em;
-            align-items: center;
-            background-color: rgb(255, 197, 38);
-            border: 10px solid rgb(255, 162, 0);
-        }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
 
-        .link-container{
-            padding: 1em;
-            margin:1em;
-        }
+    .title {
+      display: flex;
+      padding: 2em;
+      align-items: center;
+      background-color: rgb(255, 197, 38);
+      border: 10px solid rgb(255, 162, 0);
+    }
 
-        /*
+    .link-container {
+      padding: 1em;
+      margin: 1em;
+    }
+
+    /*
             Typography
         */
 
-        .title > p{
-            color:black;
-            font-size: 2.5em;
-            font-weight: 700;
-            border-bottom: 0.1em dashed black;
-            display: flex;
-            margin: auto;
-            align-items: center;
+    .title > p {
+      color: black;
+      font-size: 2.5em;
+      font-weight: 700;
+      border-bottom: 0.1em dashed black;
+      display: flex;
+      margin: auto;
+      align-items: center;
+    }
 
-        }
+    .link-container > span {
+      font-size: 0.3em;
+    }
 
-        .link-container > span{
-            font-size: 0.3em;
-        }
-
-        /*
+    /*
             Extra Style
         */
-        .border{
-            border: 0.1em solid black;
-            border-radius: 1em;
-            background-color: white;
-        }
-        
-        .border:hover,
-        .border:hover a{
-            background-color: steelblue;
-            color: white;
-        }
 
-        @media screen and (max-width:1000px) {
-            body{
-                font-size: 1.2em;
-            }
+    .border {
+      border: 0.1em solid black;
+      border-radius: 1em;
+      background-color: white;
+    }
 
-            .title>p{
-                font-size: 1.6em;
-            }
+    .border:hover,
+    .border:hover a {
+      background-color: steelblue;
+      color: white;
+    }
 
-            .link-container{
-                padding:0em;
-                margin:0.5em;
-            }
+    @media screen and (max-width: 1000px) {
+      body {
+        font-size: 1.2em;
+      }
 
-            a{
-                padding: 0em;
-            }
+      .title > p {
+        font-size: 1.6em;
+      }
 
-            .link-container{
-                padding: 1em ;
-            }
-        }
-    </style>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+      .link-container {
+        padding: 0em;
+        margin: 0.5em;
+      }
+
+      a {
+        padding: 0em;
+      }
+
+      .link-container {
+        padding: 1em;
+      }
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="flex-container">
-        <div class="title "><p>Project List:</p></div>
-        <div class="link-container border"><a class="link" href="Project 1 (Loading)/index.html">Loading 1 </a></div>
-        <div class="link-container border"><a class="link" href="Project 2 (Unfunctional Calculator)/index.html">Unfunctional Calculator</a></div>
-        <div class="link-container border"><a class="link" href="Project 3 (Nav Bar)/index.html">Nav Bar </a></div>
-        <div class="link-container border"><a class="link" href="Project 4 (Loading 2)/index.html">Loading 2 </a></div>
-        <div class="link-container border"><a class="link" href="Project 5 (To do list)/index.html">To do list </a></div>
-        <div class="link-container border"><a class="link" href="Project 6 (Clock)/index.html">Clock </a></div>
-        <div class="link-container border"><a class="link" href="Project 7 (Rotating Cube)/index.html">Rotating Cube </a></div>
-        <div class="link-container border"><a class="link" href="Project 8 (DVD Screensaver)/index.html">DVD Screensaver </a></div>
+      <div class="title"><p>Project List:</p></div>
+      <div class="link-container border">
+        <a class="link" href="Project 1 (Loading)/index.html">Loading 1 </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 2 (Unfunctional Calculator)/index.html">
+          Unfunctional Calculator
+        </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 3 (Nav Bar)/index.html">Nav Bar </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 4 (Loading 2)/index.html">Loading 2 </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 5 (To do list)/index.html">To do list </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 6 (Clock)/index.html">Clock </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 7 (Rotating Cube)/index.html">
+          Rotating Cube
+        </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 8 (DVD Screensaver)/index.html">
+          DVD Screensaver
+        </a>
+      </div>
+      <div class="link-container border">
+        <a class="link" href="Project 9 (Grid)/Index.html">Grid </a>
+      </div>
     </div>
 
     <script>
-        var project = document.getElementsByClassName('link');
-        var projectNum =1;
-        for (var i = 0;i<project.length;i++,projectNum++){
-            project[i].prepend('Project ' + projectNum + ' : ');
-        }
+      var project = document.getElementsByClassName("link");
+      var projectNum = 1;
+      for (var i = 0; i < project.length; i++, projectNum++) {
+        project[i].prepend("Project " + projectNum + " : ");
+      }
     </script>
-</body>
+  </body>
 </html>

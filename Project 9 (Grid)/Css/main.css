@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 0.625rem;
+}
+
+:root {
+  --offset-from-center: 3em;
+}
+
+#grid_container {
+  display: grid;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid_items {
+  border: black solid 1px;
+}
+
+.fill {
+  background-color: black;
+}
+
+.button_Group {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+}
+
+.button_Group > * {
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2em;
+}
+
+.button_Group > :hover {
+  background-color: rgb(0, 0, 0);
+}
+.button_Group > :active {
+  background-color: rgb(0, 0, 255);
+}
+
+.button_Up,
+.button_Down {
+  transform: translateX(-50%);
+  padding: 4em 2em 4em 2em;
+}
+
+.button_Left,
+.button_Right {
+  transform: translateY(-50%);
+  padding: 2em 4em 2em 4em;
+}
+
+.button_Up {
+  bottom: var(--offset-from-center);
+}
+.button_Down {
+  top: var(--offset-from-center);
+}
+
+.button_Left {
+  right: var(--offset-from-center);
+}
+.button_Right {
+  left: var(--offset-from-center);
+}
+
+@media screen and (max-width: 600px) {
+  .button_Group > * {
+    font-size: 0.8rem;
+  }
+}
