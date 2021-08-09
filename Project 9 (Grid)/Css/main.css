@@ -4,10 +4,6 @@
   font-size: 0.625rem;
 }
 
-body {
-  touch-action: manipulation;
-}
-
 :root {
   --offset-from-center: 3em;
 }
