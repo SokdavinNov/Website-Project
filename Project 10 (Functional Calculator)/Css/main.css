@@ -80,4 +80,17 @@
   .calculator-button {
     font-size: 1rem;
   }
+
+  #calculate > * {
+    height: 1rem;
+    font-size: 0.75rem;
+  }
+
+  #calc-number {
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+  }
+
+  #operator {
+    padding: 0.5rem 0.5rem 0.5rem 0.25rem;
+  }
 }
