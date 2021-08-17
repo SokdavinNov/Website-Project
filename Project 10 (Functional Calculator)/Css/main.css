@@ -75,7 +75,7 @@
 
 @media only screen and (max-width: 600px) {
   .calculator-grid {
-    transform: scale(75%);
+    transform: scale(50%);
   }
   .calculator-button {
     font-size: 1.5rem;
