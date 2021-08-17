@@ -13,8 +13,8 @@
 
 .calculator-grid {
   display: grid;
-  min-width: 20em;
-  min-height: 30em;
+  min-width: 15em;
+  min-height: 25em;
   width: 25%;
   height: 75%;
   grid-template-columns: auto auto auto auto;
@@ -77,13 +77,14 @@
   .calculator-grid {
     transform: scale(50%);
   }
+
   .calculator-button {
     font-size: 1rem;
   }
 
   #calculate > * {
     height: 1rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   #calc-number {
