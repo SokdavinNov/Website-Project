@@ -1,0 +1,116 @@
+:root {
+  --button-color: black;
+  --boder-color: grey;
+  --card-color: white;
+  --background-color: rgb(172, 212, 232);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.toggle-card {
+  position: relative;
+  width: 70%;
+  margin: 1em;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-title-container {
+  position: relative;
+  background-color: var(--card-color);
+  border: var(--boder-color) 2px solid;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  padding: 1.25em;
+  max-width: 30ch;
+  word-wrap: break-word;
+}
+
+.card-button {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: var(--button-color) 2px solid;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2em;
+}
+
+.card-button::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 70%;
+  height: 20%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--button-color);
+}
+
+.card-button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--button-color);
+}
+
+.card-button:hover {
+  background-color: var(--button-color);
+}
+
+.card-button:hover::after,
+.card-button:hover::before {
+  background-color: var(--card-color);
+}
+
+.card-text {
+  border: 2px var(--boder-color) solid;
+  background-color: rgb(232, 192, 172);
+  letter-spacing: 0.1em;
+  color: rgb(82, 52, 36);
+  padding: 1.5em;
+  border-top: transparent;
+}
+
+.card-text.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.07em;
+  }
+  .card-button {
+    right: 1em;
+  }
+  .card-text {
+    font-size: 0.75rem;
+  }
+}
