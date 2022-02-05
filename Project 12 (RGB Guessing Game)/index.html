@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="shortcut icon" href="#" />
+    <title>RGB Guessing Game</title>
+  </head>
+  <body>
+    <div id="grid">
+      <h1><span>R</span><span>G</span><span>B</span> Guessing Game</h1>
+      <div id="color-Border"><div id="random-Color"></div></div>
+
+      <!-- This is for input -->
+      <h3>Red:</h3>
+      <div id="red-Input-Container">
+        <input type="text" value="0" id="red-Value" />
+        <input type="range" min="0" max="255" value="0" id="red-Input" />
+      </div>
+      <h3>Green:</h3>
+      <div id="green-Input-Container">
+        <input type="text" value="0" id="green-Value" />
+        <input type="range" min="0" max="255" value="0" id="green-Input" />
+      </div>
+      <h3>Blue:</h3>
+      <div id="blue-Input-Container">
+        <input type="text" value="0" id="blue-Value" />
+        <input type="range" min="0" max="255" value="0" id="blue-Input" />
+      </div>
+      <input type="button" value="Submit" id="submit-Button" />
+    </div>
+    <div class="overlay">
+      <div id="overlay-Container">
+        <h1>So Close</h1>
+        <h3>RGB: (<span>1</span>,<span>1</span>,<span>1</span>)</h3>
+        <h3>Score: <span>1</span></h3>
+        <button id="refresh-Button">Play again</button>
+      </div>
+    </div>
+    <script src="Js/index.js"></script>
+  </body>
+</html>

@@ -38,12 +38,14 @@
     }
 
     .title {
-      display: flex;
+      display: grid;
       padding: 2em;
       align-items: center;
       background-color: rgb(255, 197, 38);
       border: 10px solid rgb(255, 162, 0);
     }
+
+
 
     .link-container {
       padding: 1em;
@@ -62,6 +64,14 @@
       display: flex;
       margin: auto;
       align-items: center;
+    }
+
+    .title > p:nth-of-type(2){
+      border-bottom: none;
+    }
+
+    .title > p:nth-of-type(2) >span{
+      color: steelblue;
     }
 
     .link-container > span {
@@ -121,7 +131,7 @@
   </head>
   <body>
     <div class="flex-container">
-      <div class="title"><p>Project List:</p></div>
+      <div class="title"><p>Project List: </p> <p>By: <span>Nov Sokdavin</span></p></div>
       <div class="link-container border">
         <a class="link" href="Project 1 (Loading)/index.html">Loading 1 </a>
       </div>
@@ -164,6 +174,12 @@
     <div class="link-container border">
       <a class="link" href="Project 11 (Toggle Card)/index.html">
         Toggle Card
+      </a>
+    </div>
+
+    <div class="link-container border">
+      <a class="link" href="Project 12 (RGB Guessing Game)/index.html">
+        RGB Guessing Game
       </a>
     </div>
   </div>
